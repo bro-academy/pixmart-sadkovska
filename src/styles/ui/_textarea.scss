@@ -1,0 +1,9 @@
+@use "/src/styles/global/mixin";
+
+.textarea {
+  @extend %primitive-field;
+
+  &--lg {
+    @extend %primitive-field-lg;
+  }
+}

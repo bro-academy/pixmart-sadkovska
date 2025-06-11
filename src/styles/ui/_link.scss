@@ -1,0 +1,11 @@
+@use "/src/styles/global/mixin";
+
+.link {
+  @extend %link-l2;
+
+  color: var(--color-marina-800);
+
+  &__icon-right {
+    margin-left: 8px;
+  }
+}

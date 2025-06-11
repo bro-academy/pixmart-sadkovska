@@ -1,0 +1,37 @@
+{% import 'src/templates/partials/ui/elements.njk' as ui %}
+
+<section class="blog">
+    <div class="blog__wrapper wrapper">
+        <h3 class="blog__heading">
+            Latest Expert
+            <a class="blog__link link" href="/blog.html">
+                Explore All Articles
+                {{ ui.icon('chevron-right', 'link__icon-right') }}
+            </a>
+        </h3>
+
+        <div class="blog__products">
+            {% for item in blog__products %}
+                <figure class="blog__card">
+<img
+              class="blog__img"
+              width="{{ item.width }}"
+              height="{{ item.height }}"
+              src="{{ item.img }}"
+              alt="{{ item.alt }}"
+/>
+
+                    <figcaption class="blog__figure-heading">
+
+                        <h4 class="blog__title">{{ item.title }}</h4>
+                        <p  class="blog__date">
+                            {{ item.date }}</p>
+
+                    </figcaption>
+                </figure>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</section>

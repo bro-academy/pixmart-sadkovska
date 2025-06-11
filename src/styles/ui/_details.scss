@@ -1,0 +1,56 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.details {
+  position: relative;
+  padding: 24px;
+  border-radius: 10px;
+  background-color: var(--color-primary-invert);
+
+  @extend %surface-shadow;
+
+  &::-webkit-details-marker,
+  &::marker{
+    display: none;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+
+  }
+
+  &__heading {
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+    line-height: 32px;
+
+    @extend %h5;
+  }
+
+  &__heading-text {
+    margin: 0;
+    padding-right: 42px;
+  }
+
+  &__button {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    right: 0;
+  }
+
+  &__icon {
+    transition: transform .3s ease;
+  }
+
+  &[open] {
+    outline: 2px solid var(--color-marina-800);
+
+    .details__icon {
+      transform: rotate(180deg);
+    }
+  }
+}

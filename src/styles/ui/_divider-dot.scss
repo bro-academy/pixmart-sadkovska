@@ -1,0 +1,11 @@
+.dividers-dot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  & > *:not(:last-child)::after {
+    content: '•';
+    display: inline-block;
+    margin-left: 6px;
+  }
+}

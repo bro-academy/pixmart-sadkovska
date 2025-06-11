@@ -1,0 +1,70 @@
+{% from 'src/templates/partials/ui/elements.njk' import icon %}
+
+<section class="trending">
+    <div class="trending__wrapper wrapper">
+        <div class="trending-text">
+            <p class="trending__category">
+                TRENDING
+            </p>
+
+            <p class="trending__heading">
+                Popular Products
+            </p>
+        </div>
+
+        <div class="trending__slider-actions">
+            <button
+                    type="button"
+                    class="trendings__slider-arrow--left button button--secondary button--lg button--icon"
+            >
+                {{ icon("chevron-left", "trendings__slider-arrow--img") }}
+            </button>
+
+            <button
+                    type="button"
+                    class="trendings__slider-arrow--right button button--secondary button--lg button--icon"
+            >
+                {{ icon("chevron-right", "trendings__slider-arrow--img") }}
+            </button>
+        </div>
+    </div>
+
+    <div class="trending__wrapper wrapper wrapper--mobile-full-width">
+        <div class="trending__cards-block">
+
+            {% for item in trending__section %}
+                <figure class="trending__card">
+                    <img
+                            class="trending__img"
+                            width="{{ item.width }}"
+                            height="{{ item.height }}"
+                            src="{{ item.img }}"
+                            alt="{{ item.alt }}"
+                    />
+                    <p class="trending__card-label label">
+                        {{ icon("trophy", "trending__card-icon") }}
+                    </p>
+
+                    <figcaption class="trending__description">
+                        <div class="trending__description-block">
+                            <h3 class="trending__title">{{ item.title }}</h3>
+                            <p class="trending__price">
+                                {{ item.price }}
+                            </p>
+                        </div>
+
+                        <div class="trending__info-block dividers-dot">
+                            <p class="trending__info">
+                                {{ item.info }}
+                            </p>
+
+                            <p class="trending__info">
+                                {{ item.info_part }}
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,14 @@
+.dividers-line {
+  position: relative;
+
+  & > *:not(:last-child)::after {
+    content: '|';
+    display: inline-block;
+    margin-left: 6px;
+    color: currentColor;
+  }
+
+  & > *:not(:first-child) {
+    margin-left: 8px;
+  }
+}

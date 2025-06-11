@@ -1,0 +1,224 @@
+{
+  "product_section": [
+    {
+      "img": "/src/assets/images/ui-kit.svg",
+      "title": "UI Kits",
+      "width": "150",
+      "height": "150",
+      "alt": "ui-kits"
+    },
+    {
+      "img": "/src/assets/images/social-media.svg",
+      "title": "SocialMedia",
+      "width": "150",
+      "height": "150",
+      "alt": "social-media"
+    },
+    {
+      "img": "/src/assets/images/presentation.svg",
+      "title": "Presentation",
+      "width": "150",
+      "height": "150",
+      "alt": "presentation"
+    },
+    {
+      "img": "/src/assets/images/fonts.svg",
+      "title": "Fonts",
+      "width": "150",
+      "height": "150",
+      "alt": "fonts"
+    },
+    {
+      "img": "/src/assets/images/illustrations.svg",
+      "title": "Illustrations",
+      "width": "150",
+      "height": "150",
+      "alt": "illustrations"
+    }
+  ],
+  "categories__products_left": [
+    {
+      "icon": "ui-kit",
+      "title": "Templates",
+      "width": "48",
+      "height": "48",
+      "alt": "templates",
+      "info": "For all neeads",
+      "info_part": "Modern"
+    },
+    {
+      "icon": "presentation",
+      "title": "Slides",
+      "width": "48",
+      "height": "48",
+      "alt": "slides",
+      "info": "Pitch-ready",
+      "info_part": "Creative"
+    }
+  ],
+  "categories__products_right": [
+    {
+      "icon": "social-media",
+      "title": "App Icons",
+      "width": "48",
+      "height": "48",
+      "alt": "app-icons",
+      "info": "High-quality",
+      "info_part": "Elegant"
+    },
+    {
+      "icon": "illustrations",
+      "title": "Illustrations",
+      "width": "48",
+      "height": "48",
+      "alt": "illustrations",
+      "info": "Easy to use",
+      "info_part": "Unique"
+    }
+  ],
+  "trending__section": [
+    {
+      "img": "/src/assets/images/trending-card-4.png",
+      "title": "Travel Hero",
+      "width": "305",
+      "height": "273",
+      "alt": "templates",
+      "info": "Adventure",
+      "price": "€29.99",
+      "info_part": "Journey"
+    },
+    {
+      "img": "/src/assets/images/trending-card-3.png",
+      "title": "Healthcare Pro",
+      "width": "305",
+      "height": "273",
+      "alt": "slides",
+      "price": "€15.99",
+      "info": " Medical",
+      "info_part": "Wellness"
+    },
+    {
+      "img": "/src/assets/images/trending-card-2.png",
+      "title": "Foodish Delight",
+      "width": "305",
+      "height": "273",
+      "alt": "app-icons",
+      "price": "€31.99",
+      "info": "Catering",
+      "info_part": "Food"
+    },
+    {
+      "img": "/src/assets/images/trending-card-1.png",
+      "title": "Real Estate",
+      "width": "305",
+      "height": "273",
+      "alt": "illustrations",
+      "price": "€40.99",
+      "info": "Modern",
+      "info_part": "Homes"
+    }
+  ],
+  "pricing": [
+    {
+      "price": "€14.99",
+      "title": "Standard Membership",
+      "button": "Subscribe",
+      "month": "/ Month",
+      "offer": [
+        {
+          "variant": "Enhanced Resource Access"
+        },
+        {
+          "variant": "Monthly Credits"
+        },
+        {
+          "variant": "Priority Customer Support"
+        },
+        {
+          "variant": "Community Features Access"
+        }
+      ]
+    },
+    {
+      "price": "€29.99",
+      "label": "Best seller",
+      "title": "Plus Membership",
+      "button": "Subscribe",
+      "month": "/ Month",
+      "offer": [
+        {
+          "variant": "All Standard Benefits"
+        },
+        {
+          "variant": "Increased Monthly Credits"
+        },
+        {
+          "variant": "Early Access to New Releases"
+        },
+        {
+          "variant": "Member-Only Offers"
+        }
+      ]
+    },
+    {
+      "price": "€49.99",
+      "title": "Pro Membership",
+      "button": "Subscribe",
+      "month": "/ Month",
+      "offer": [
+        {
+          "variant": "All Plus Benefits"
+        },
+        {
+          "variant": "Unlimited Downloads"
+        },
+        {
+          "variant": "Custom Licensing"
+        },
+        {
+          "variant": "Direct Creator Collaboration"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "heading": "Can I request a refund?",
+      "text": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "heading": "How do I access my purchased products?",
+      "text": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "heading": "Are there any discounts for bulk purchases?",
+      "text": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "heading": "What payment methods do you accept here?",
+      "text": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "heading": "Can I sell my digital products on this marketplace?",
+      "text": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    }
+  ],
+  "blog__products": [
+    {
+      "img": "/src/assets/images/blog-img-1.png",
+      "title": "Creative Blog",
+      "width": "624",
+      "height": "702",
+      "alt": "blog-picture-nft",
+      "date": "15 APRIL 2024"
+    },
+    {
+      "img": "/src/assets/images/blog-img-2.png",
+      "title": "Best Dishes",
+      "width": "624",
+      "height": "702",
+      "alt": "blog-picture-best-dishes",
+      "date": "5 MAY 2024"
+    }
+  ]
+}

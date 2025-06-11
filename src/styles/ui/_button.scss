@@ -1,0 +1,139 @@
+     @use "/src/styles/global/mixin";
+     @use "/src/styles/global/breakpoints" as bp;
+
+     // Button Styles
+     .button {
+       display: inline-flex;
+       align-items: center;
+       justify-content: center;
+       font-weight: 500;
+       font-family: inherit;
+       border-radius: 6px;
+       border: 2px solid transparent;
+       cursor: pointer;
+       transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+       svg {
+         margin-right: 6px;
+       }
+
+       &:disabled {
+         background-color: var(--color-disabled);
+         color: var(--color-disabled-invert);
+         cursor: not-allowed;
+         border-color: transparent;
+       }
+
+       &--sm {
+         font-size: 12px;
+         padding: 4px 10px;
+       }
+
+       &--md {
+         font-size: 14px;
+         padding: 6px 14px;
+       }
+
+       &--lg {
+         @extend %link-l1;
+
+         padding: 18px 32px;
+       }
+
+       &--full {
+         width: 100%;
+       }
+
+       &--icon {
+         padding: 6px;
+         background-color: transparent;
+
+         &.button--md {
+           width: 40px;
+           height: 40px;
+         }
+
+         &.button--lg {
+           width: 64px;
+           height: 64px;
+         }
+
+         svg {
+           margin: 0;
+         }
+       }
+
+       // Primary (Blue buttons)
+       &--primary {
+         background-color: var(--color-marina-800);
+         color: var(--color-primary-invert);
+
+         &:hover {
+           background-color: var(--color-focus);
+         }
+
+         &:active {
+           background-color: var(--color-marina-900);
+         }
+
+         &:disabled {
+           background-color: var(--color-disabled);
+         }
+       }
+
+       // Secondary (Outlined buttons)
+       &--secondary {
+         background-color: transparent;
+         color: var(--color-bg-baseicone);
+         border-color: var(--color-separator-bold);
+
+         &:hover {
+           background-color: rgb(0 92 180 / 0.08);
+           border-color: var(--color-focus);
+         }
+
+         &:active {
+           background-color: rgb(0 92 180 / 0.16);
+         }
+
+         &:disabled {
+           color: var(--color-disabled);
+           border-color: var(--color-disabled);
+         }
+       }
+
+       // Tertiary (Ghost buttons)
+       &--tertiary {
+         background-color: transparent;
+         color: var(--color-accent-link);
+
+         &:hover {
+           background-color: rgb(0 92 180 / 0.08);
+         }
+
+         &:active {
+           background-color: rgb(0 92 180 / 0.16);
+         }
+
+         &:disabled {
+           color: var(--color-disabled);
+         }
+       }
+
+       &--flat {
+         background-color: var(--color-surface-white);
+         color: var(--color-primary);
+
+         &:hover {
+           background-color: var(--color-focus);
+         }
+
+         &:active {
+           background-color: var(--color-marina-900);
+         }
+
+         &:disabled {
+           background-color: var(--color-disabled);
+         }
+       }
+     }

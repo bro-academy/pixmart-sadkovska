@@ -1,0 +1,172 @@
+@use "/src/styles/global/variables";
+@use "/src/styles/global/breakpoints" as bp;
+
+// Font Families
+@mixin typography($font-family, $font-weight, $font-size, $line-height, $letter-spacing) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: #{$font-size}px;
+  line-height: #{$line-height}px;
+  letter-spacing: $letter-spacing;
+}
+
+// Font families
+$font-plus-bold: 'Plus Jakarta Sans', sans-serif;
+$font-plus-medium: 'Plus Jakarta Sans', sans-serif;
+$font-libre-regular: 'Libre Franklin', sans-serif;
+$font-libre-medium: 'Libre Franklin', sans-serif;
+$font-libre-semibold: 'Libre Franklin', sans-serif;
+
+// Size mixin for buttons 
+@mixin button-size($size) {
+  @if $size == sm {
+    font-size: 12px;
+    padding: 4px 8px;
+  } @else if $size == md {
+    font-size: 14px;
+    padding: 6px 12px;
+  } @else if $size == lg {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+// Headings
+%h1 {
+  @include typography($font-plus-bold, bold, 52, 62, -0.5px);
+}
+
+%h2 {
+  @include typography($font-plus-bold, bold, 36, 48, -0.5px);
+}
+
+%h3 {
+  @include typography($font-plus-bold, bold, 28, 36, -0.5px);
+}
+
+%h4 {
+  @include typography($font-plus-bold, bold, 24, 32, 0);
+}
+
+%h5 {
+  @include typography($font-plus-bold, bold, 20, 26, 0);
+}
+
+// Subheadings
+%s1 {
+  @include typography($font-plus-medium, 500, 52, 62, -0.5px);
+}
+
+%s2 {
+  @include typography($font-plus-medium, 500, 36, 48, -0.5px);
+}
+
+%s3 {
+  @include typography($font-plus-medium, 500, 28, 40, 0);
+}
+
+%s4 {
+  @include typography($font-plus-medium, 500, 24, 32, 0);
+}
+
+%s5 {
+  @include typography($font-plus-medium, 500, 20, 28, 0);
+}
+
+// Body text – Regular
+%body-p1 {
+  @include typography($font-libre-regular, normal, 18, 28, 0);
+}
+
+%body-p2 {
+  @include typography($font-libre-regular, normal, 16, 24, 0);
+}
+
+%body-p3 {
+  @include typography($font-libre-regular, normal, 14, 20, 0);
+}
+
+%body-p4 {
+  @include typography($font-libre-regular, normal, 12, 16, 0);
+}
+
+%body-p5 {
+  @include typography($font-libre-regular, normal, 11, 16, 0);
+}
+
+// Body text – Medium
+%body-p1-medium {
+  @include typography($font-libre-medium, 500, 18, 28, 0);
+}
+
+%body-p2-medium {
+  @include typography($font-libre-medium, 500, 16, 24, 0);
+}
+
+%body-p3-medium {
+  @include typography($font-libre-medium, 500, 14, 20, 0);
+}
+
+%body-p4-medium {
+  @include typography($font-libre-medium, 500, 12, 16, 0);
+}
+
+%body-p5-medium {
+  @include typography($font-libre-medium, 500, 11, 16, 0);
+}
+
+// Links
+%link-l1 {
+  @include typography($font-libre-semibold, 600, 18, 28, 0);
+}
+
+%link-l2 {
+  @include typography($font-libre-semibold, 600, 16, 24, 0);
+}
+
+%link-l3 {
+  @include typography($font-libre-semibold, 600, 14, 20, 0);
+}
+
+%link-l4 {
+  @include typography($font-libre-semibold, 600, 12, 16, 0);
+}
+
+%link-l5 {
+  @include typography($font-libre-semibold, 600, 11, 16, 0);
+}
+
+// primitive field
+%primitive-field {
+  @extend %body-p2;
+
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--color-separator-bold);
+  color: var(--color-primary);
+  padding: 10px 12px;
+  background-color: var(--color-bg-base);
+  transition: border .25s ease, outline .25s ease;
+
+  &::placeholder {
+    color: var(--color-secondary2);
+  }
+
+  &:hover {
+    border-color: var(--color-marina-600);
+  }
+
+  &:focus-visible {
+    border-color: var(--color-marina-600);
+    outline: 1px solid var(--color-marina-600);
+    outline-offset: 0;
+  }
+}
+
+%primitive-field-lg {
+  padding: 20px;
+}
+
+%surface-shadow {
+  box-shadow: 0 4px 40px var(--color-surface-shadow);
+}

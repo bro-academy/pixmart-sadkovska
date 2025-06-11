@@ -1,0 +1,36 @@
+@use "/src/styles/global/mixin";
+
+.catalog-header {
+  padding: var(--spacer-6) 0 var(--spacer-7);
+  position: relative;
+
+  &__bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+    }
+  }
+
+  &__title{
+    position: relative;
+
+    @extend %h1;
+
+    margin: 0;
+
+    mark{
+      background: transparent;
+      color: var(--color-marina-800);
+    }
+  }
+
+
+}

@@ -1,0 +1,133 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.footer {
+  padding-block-start: 32px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+
+    @include bp.md {
+      flex-direction: row;
+    }
+  }
+
+  &__logo-wrapper {
+    max-width: 320px;
+    align-self: flex-start;
+  }
+
+  &__logo {
+    max-width: 300px;
+  }
+
+  &__text {
+    @extend %body-p2;
+
+    margin: 0;
+  }
+
+  &__menu {
+    padding: 0;
+    margin: 0;
+
+    @include bp.md {
+      display: flex;
+      gap: 64px;
+      margin-block-end: 72px;
+    }
+  }
+
+  &__menu-list {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__menu-group {
+    margin-block-start: 32px;
+  }
+
+  &__menu-group-title {
+    @extend %h5;
+
+    margin-block: 0 16px;
+  }
+
+  &__menu-item {
+    margin: 0;
+    margin-block-end: 8px;
+
+    &:last-child {
+      margin-block-end: 0;
+    }
+  }
+
+  &__link {
+    @extend %body-p2;
+
+    color: var(--color-secondary2)
+  }
+
+  &__social-block {
+    margin-block: 64px 8px;
+    padding: 0;
+
+    @include bp.md {
+      margin-block: 0;
+      align-self: center;
+    }
+  }
+
+  &__subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include bp.md {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__subscribe-text {
+    @extend %h4;
+  }
+
+  &__subscribe-form {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__legal {
+    color: var(--color-secondary2);
+    background: var(--color-primary);
+    margin-block-start: 64px;
+    padding-block: 24px;
+  }
+
+  &__legal-list {
+    margin: 0;
+    padding: 0;
+    color: var(--color-secondary2-invert);
+    display: flex;
+  }
+
+  &__legal-link {
+    @extend %body-p2;
+
+    color: var(--color-secondary2-invert);
+  }
+
+  &__copyright {
+    margin: 0;
+  }
+
+  &__copyright-small {
+    @extend %body-p2;
+
+    color: var(--color-secondary2-invert);
+  }
+}

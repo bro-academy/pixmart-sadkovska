@@ -1,0 +1,15 @@
+{% extends 'src/templates/layouts/base.njk' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/styles/pages/blog-article.scss" />
+{% endblock %}
+
+{% set activePage = 'Blog' %}
+
+{% block content %}
+  <article class="blog-article">
+    {% include 'src/templates/partials/blog-article/header.njk' %}
+    {% include 'src/templates/partials/blog-article/content.njk' %}
+    {% include 'src/templates/partials/blog-article/related.njk' %}
+  </article>
+{% endblock %}

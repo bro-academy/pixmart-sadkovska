@@ -1,0 +1,85 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.faq {
+  margin-block-end: 64px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include bp.md {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  &__category {
+    color: var(--color-category-text);
+
+    @extend %body-p2;
+
+    margin: 0;
+  }
+
+  &__heading {
+    @extend %h2;
+
+    color: var(--color-category-heading);
+    margin-block: 16px 32px;
+    text-align: left;
+
+  }
+
+  &__answers-block {
+    justify-content: start;
+    width: 100%;
+
+    @include bp.md {
+      width: auto;
+    }
+  }
+
+  &__details {
+    position: relative;
+  }
+
+  &__details-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+
+    @include bp.md {
+      max-width: 572px;
+    }
+  }
+
+  &__details-heading {
+    @extend %h5;
+  }
+
+  &__details-button {
+    position: absolute;
+    right: 65px;
+    border: 1px solid var(--color-category-text);
+  }
+
+  &__details-element {
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    margin-bottom: 64px;
+    width: 100%;
+
+    @include bp.md {
+      width: auto;
+    }
+  }
+
+
+}

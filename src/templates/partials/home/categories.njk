@@ -1,0 +1,32 @@
+<section class="categories">
+    <div class="categories__wrapper wrapper wrapper--column">
+        <div class="categories__details">
+            <p class="categories__category">
+                CATEGORIES
+            </p>
+            <h2 class="categories__heading">Discover Assets for <br> Every Projects</h2>
+            <p class="categories__text">
+                From fonts and icons to mockups and templates, our comprehensive
+                categories ensure that you find exactly what you need to your projects.
+            </p>
+            <button class="categories__button button button--primary button--lg">
+                Shop Now
+            </button>
+        </div>
+
+        <div class="categories__products">
+            <div class="categories__products-left">
+                {% for item in categories__products_left %}
+                    {% include 'src/templates/partials/home/category-card.njk' %}
+                {% endfor %}
+                <div class="categories__placeholder-bottom"></div>
+            </div>
+            <div class="categories__products-right">
+                <div class="categories__placeholder-top"></div>
+                {% for item in categories__products_right %}
+                    {% include 'src/templates/partials/home/category-card.njk' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

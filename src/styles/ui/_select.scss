@@ -1,0 +1,9 @@
+@use "/src/styles/global/mixin";
+
+.select {
+  @extend %primitive-field;
+
+  &--lg {
+    @extend %primitive-field-lg;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "header__menu": [
+    {
+      "title": "About",
+      "href": "/"
+    },
+    {
+      "title": "Products",
+      "href": "/catalog.html"
+    },
+    {
+      "title": "Blog",
+      "href": "/blog.html"
+    },
+    {
+      "title": "Contact",
+      "href": "/contact.html"
+    }
+  ]
+}
