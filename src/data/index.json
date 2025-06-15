@@ -3,36 +3,26 @@
     {
       "img": "/src/assets/images/ui-kit.svg",
       "title": "UI Kits",
-      "width": "150",
-      "height": "150",
       "alt": "ui-kits"
     },
     {
       "img": "/src/assets/images/social-media.svg",
       "title": "SocialMedia",
-      "width": "150",
-      "height": "150",
       "alt": "social-media"
     },
     {
       "img": "/src/assets/images/presentation.svg",
       "title": "Presentation",
-      "width": "150",
-      "height": "150",
       "alt": "presentation"
     },
     {
       "img": "/src/assets/images/fonts.svg",
       "title": "Fonts",
-      "width": "150",
-      "height": "150",
       "alt": "fonts"
     },
     {
       "img": "/src/assets/images/illustrations.svg",
       "title": "Illustrations",
-      "width": "150",
-      "height": "150",
       "alt": "illustrations"
     }
   ],
@@ -40,8 +30,6 @@
     {
       "icon": "ui-kit",
       "title": "Templates",
-      "width": "48",
-      "height": "48",
       "alt": "templates",
       "info": "For all neeads",
       "info_part": "Modern"
@@ -49,8 +37,6 @@
     {
       "icon": "presentation",
       "title": "Slides",
-      "width": "48",
-      "height": "48",
       "alt": "slides",
       "info": "Pitch-ready",
       "info_part": "Creative"
@@ -60,8 +46,6 @@
     {
       "icon": "social-media",
       "title": "App Icons",
-      "width": "48",
-      "height": "48",
       "alt": "app-icons",
       "info": "High-quality",
       "info_part": "Elegant"
@@ -69,8 +53,6 @@
     {
       "icon": "illustrations",
       "title": "Illustrations",
-      "width": "48",
-      "height": "48",
       "alt": "illustrations",
       "info": "Easy to use",
       "info_part": "Unique"
@@ -80,8 +62,6 @@
     {
       "img": "/src/assets/images/trending-card-4.png",
       "title": "Travel Hero",
-      "width": "305",
-      "height": "273",
       "alt": "templates",
       "info": "Adventure",
       "price": "€29.99",
@@ -90,8 +70,6 @@
     {
       "img": "/src/assets/images/trending-card-3.png",
       "title": "Healthcare Pro",
-      "width": "305",
-      "height": "273",
       "alt": "slides",
       "price": "€15.99",
       "info": " Medical",
@@ -100,8 +78,6 @@
     {
       "img": "/src/assets/images/trending-card-2.png",
       "title": "Foodish Delight",
-      "width": "305",
-      "height": "273",
       "alt": "app-icons",
       "price": "€31.99",
       "info": "Catering",
@@ -110,8 +86,6 @@
     {
       "img": "/src/assets/images/trending-card-1.png",
       "title": "Real Estate",
-      "width": "305",
-      "height": "273",
       "alt": "illustrations",
       "price": "€40.99",
       "info": "Modern",
@@ -207,16 +181,12 @@
     {
       "img": "/src/assets/images/blog-img-1.png",
       "title": "Creative Blog",
-      "width": "624",
-      "height": "702",
       "alt": "blog-picture-nft",
       "date": "15 APRIL 2024"
     },
     {
       "img": "/src/assets/images/blog-img-2.png",
       "title": "Best Dishes",
-      "width": "624",
-      "height": "702",
       "alt": "blog-picture-best-dishes",
       "date": "5 MAY 2024"
     }
