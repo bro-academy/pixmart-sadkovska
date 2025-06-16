@@ -2,7 +2,13 @@
 @use "/src/styles/global/breakpoints" as bp;
 
 // Font Families
-@mixin typography($font-family, $font-weight, $font-size, $line-height, $letter-spacing) {
+@mixin typography(
+  $font-family,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $letter-spacing
+) {
   font-family: $font-family;
   font-weight: $font-weight;
   font-size: #{$font-size}px;
@@ -11,13 +17,13 @@
 }
 
 // Font families
-$font-plus-bold: 'Plus Jakarta Sans', sans-serif;
-$font-plus-medium: 'Plus Jakarta Sans', sans-serif;
-$font-libre-regular: 'Libre Franklin', sans-serif;
-$font-libre-medium: 'Libre Franklin', sans-serif;
-$font-libre-semibold: 'Libre Franklin', sans-serif;
+$font-plus-bold: "Plus Jakarta Sans", sans-serif;
+$font-plus-medium: "Plus Jakarta Sans", sans-serif;
+$font-libre-regular: "Libre Franklin", sans-serif;
+$font-libre-medium: "Libre Franklin", sans-serif;
+$font-libre-semibold: "Libre Franklin", sans-serif;
 
-// Size mixin for buttons 
+// Size mixin for buttons
 @mixin button-size($size) {
   @if $size == sm {
     font-size: 12px;
@@ -146,7 +152,9 @@ $font-libre-semibold: 'Libre Franklin', sans-serif;
   color: var(--color-primary);
   padding: 10px 12px;
   background-color: var(--color-bg-base);
-  transition: border .25s ease, outline .25s ease;
+  transition:
+    border 0.25s ease,
+    outline 0.25s ease;
 
   &::placeholder {
     color: var(--color-secondary2);

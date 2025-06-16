@@ -12,6 +12,7 @@
     "lint:fix": "npx eslint . --fix",
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint '**/*.scss' --fix",
+    "prettier": "prettier --write -u 'src/**/*.{njk,twig,js,ts,scss,json}'",
     "prepare": "husky"
   },
   "author": "Oksana Sadkovska",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@bro-academy/vite-plugin-image-optimizer": "^0.0.2",
     "@bro-academy/vite-plugin-svg-sprite": "^0.0.3",
+    "@destination/prettier-plugin-twig": "^1.5.0",
     "@html-eslint/eslint-plugin": "^0.40.3",
     "@html-eslint/parser": "^0.40.0",
     "@vituum/vite-plugin-nunjucks": "^1.1.0",
@@ -36,8 +38,17 @@
     "vituum": "^1.2.0"
   },
   "lint-staged": {
-    "*.njk": "eslint --fix",
-    "*.scss": "stylelint --fix"
+    "*.{njk,twig,js,ts}": [
+      "prettier --write -u",
+      "eslint --fix"
+    ],
+    "*.scss": [
+      "prettier --write -u",
+      "stylelint --fix"
+    ],
+    "src/data/*.json": [
+      "prettier --write -u"
+    ]
   },
   "volta": {
     "node": "22.14.0"

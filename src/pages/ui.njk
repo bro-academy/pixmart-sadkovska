@@ -3,21 +3,21 @@
 {% import 'src/templates/partials/ui/elements.njk' as ui %}
 
 {% block styles %}
-<style>
-  body {
-    color: black;
-  }
-
-  section {
-    border: 1px solid gray;
-    padding: 20px;
-    margin: 20px;
-
-    header {
-      margin-block: 10px;
+  <style>
+    body {
+      color: black;
     }
-  }
-</style>
+
+    section {
+      border: 1px solid gray;
+      padding: 20px;
+      margin: 20px;
+
+      header {
+        margin-block: 10px;
+      }
+    }
+  </style>
 {% endblock %}
 
 {% block content %}
@@ -42,23 +42,18 @@
   </ul>
 
   <section>
-    <header>
-      Buttons
-    </header>
+    <header>Buttons</header>
 
     <div>
-            {{ ui.button('HELLO') }}
+      {{ ui.button('HELLO') }}
     </div>
   </section>
 
   <section>
-    <header>
-      Icons
-    </header>
+    <header>Icons</header>
 
     <div>
       {{ ui.icon('check', 'class') }}
     </div>
   </section>
-
 {% endblock %}

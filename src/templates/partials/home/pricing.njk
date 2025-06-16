@@ -2,20 +2,16 @@
 
 <section class="pricing">
   <div class="pricing__wrapper wrapper">
-    <p class="pricing__category">
-      PRICING PLAN
-    </p>
-    <h4 class="pricing__heading">
-      Choose The Perfect Plan for Creative Potential
-    </h4>
+    <p class="pricing__category">PRICING PLAN</p>
+    <h4 class="pricing__heading">Choose The Perfect Plan for Creative Potential</h4>
 
     <div class="pricing__cards-block">
       {% for item in pricing %}
         <div class="pricing__card-item{% if item.label %} pricing__card-item--labeled {% endif %}">
           {% if item.label %}
-          <p class="pricing__label label">
-            {{ item.label }}
-          </p>
+            <p class="pricing__label label">
+              {{ item.label }}
+            </p>
           {% endif %}
           <p class="pricing__title">
             {{ item.title }}

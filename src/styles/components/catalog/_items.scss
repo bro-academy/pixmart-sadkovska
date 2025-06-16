@@ -4,36 +4,36 @@
 .catalog-items {
   margin-block-end: 120px;
 
-  @include bp.down-sm{
+  @include bp.down-sm {
     margin-block-end: var(--spacer-6);
   }
 
-  &__inner{
+  &__inner {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  &__item{
-    @include bp.md{
+  &__item {
+    @include bp.md {
       grid-column: span 1;
     }
 
-    @include bp.down-sm{
+    @include bp.down-sm {
       grid-column: span 3;
     }
 
-    &--sold{
-      opacity: .5;
+    &--sold {
+      opacity: 0.5;
     }
   }
 
-  &__item-inner{
+  &__item-inner {
     display: flex;
     flex-direction: column;
   }
 
-  &__img-wrap{
+  &__img-wrap {
     display: flex;
     position: relative;
     aspect-ratio: 325 / 260;
@@ -41,14 +41,14 @@
     overflow: hidden;
     border-radius: 20px;
 
-    img{
+    img {
       object-fit: cover;
       width: 100%;
       height: 100%;
     }
   }
 
-  &__badge{
+  &__badge {
     position: absolute;
     left: var(--spacer-1);
     top: var(--spacer-1);
@@ -59,64 +59,64 @@
 
     @extend %body-p2;
 
-    &--sold{
+    &--sold {
       background: var(--color-bg-base);
     }
 
-    &--new{
+    &--new {
       background: var(--color-emerald-1000);
       color: var(--color-primary-white);
     }
 
-    &--popular{
+    &--popular {
       background: var(--color-marina-800);
       color: var(--color-primary-white);
     }
   }
 
-  &__data{
+  &__data {
     display: flex;
     flex-direction: column;
   }
 
-  &__name{
+  &__name {
     @extend %h5;
   }
 
-  &__categories{
+  &__categories {
     display: flex;
     flex-wrap: wrap;
   }
 
-  &__category{
+  &__category {
     @extend %body-p2;
 
     color: var(--color-text-icons-elements-secondary);
 
-    &:not(:last-child){
-      &::after{
+    &:not(:last-child) {
+      &::after {
         content: " · ";
       }
     }
   }
 
-  &__price-wrap{
+  &__price-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 12px;
   }
 
-  &__price{
+  &__price {
     @extend %h5;
   }
 
-  &__buttons{
+  &__buttons {
     display: flex;
     gap: var(--spacer-0);
   }
 
-  &__footer{
+  &__footer {
     display: flex;
     justify-content: center;
     margin-top: var(--spacer-5);

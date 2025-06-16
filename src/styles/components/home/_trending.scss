@@ -65,7 +65,6 @@
 
     color: var(--color-category-text);
     margin: 0;
-
   }
 
   &__heading {
@@ -79,7 +78,6 @@
     @extend %h3;
 
     margin: 0;
-
   }
 
   &__text {
@@ -114,6 +112,4 @@
     margin: 0;
     color: var(--color-secondary2);
   }
-
-
 }

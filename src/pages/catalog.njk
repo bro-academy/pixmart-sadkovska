@@ -1,14 +1,14 @@
 {% extends 'src/templates/layouts/base.njk' %}
 
 {% block styles %}
-    <link rel="stylesheet" href="/src/styles/pages/catalog.scss" />
+  <link rel="stylesheet" href="/src/styles/pages/catalog.scss">
 {% endblock %}
 
 {% set activePage = 'Catalog' %}
 
 {% block content %}
-    <article>
-        {% include 'src/templates/partials/catalog/header.njk' %}
-        {% include 'src/templates/partials/catalog/content.njk' %}
-    </article>
+  <article>
+    {% include 'src/templates/partials/catalog/header.njk' %}
+    {% include 'src/templates/partials/catalog/content.njk' %}
+  </article>
 {% endblock %}

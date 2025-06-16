@@ -3,14 +3,18 @@
 
 .main-banner {
   padding-block: 32px 64px;
-  background: linear-gradient(90deg, var(--color-surface-blue) 44%, #FFFFFF 100%);
+  background: linear-gradient(
+    90deg,
+    var(--color-surface-blue) 44%,
+    #ffffff 100%
+  );
 
   &__wrapper {
     flex-direction: column;
 
     @include bp.md {
       flex-direction: row-reverse;
-      gap: 116px
+      gap: 116px;
     }
   }
 
@@ -18,7 +22,6 @@
     position: relative;
     overflow: hidden;
     aspect-ratio: 408 / 276;
-
 
     @include bp.md {
       width: 100%;
@@ -129,5 +132,4 @@
     gap: 24px;
     flex-wrap: wrap;
   }
-
 }

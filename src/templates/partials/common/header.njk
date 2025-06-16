@@ -1,93 +1,99 @@
 {% from 'src/templates/partials/ui/elements.njk' import icon %}
 
 <header class="header">
-    <div class="header__wrapper wrapper">
-        <div class="header__menu-block">
-            <label id="burger" class="header__burger burger button button--primary button--icon">
-                <input type="checkbox" class="header__burger-icon burger__icon">
-                <ul class="header__menu">
-                    {% for item in header__menu %}
-                        <li class="header__menu-item">
-                            <a href="{{ item.href }}" class="header__menu-link">
-                                {{ item.title }}
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </label>
-            <a href="/" class="header__logo">
-                <img src="/src/assets/images/logo.svg" alt="logo">
-            </a>
-        </div>
-        <div class="header__actions-block">
-            <button class="header__action-search button button--secondary button--icon"
-                    type="button">
-                {{ icon("search-md", "header__action-search-icon") }}
-            </button>
-            <input type="search" class="header__search-input input" placeholder="Search for Digital Assets">
-            <button class="header__action-shopping-bag button button--primary button--icon"
-                    type="button">
-                {{ icon("shopping-bag", "header__action-shopping-bag-icon") }}
-            </button>
-        </div>
+  <div class="header__wrapper wrapper">
+    <div class="header__menu-block">
+      <label id="burger" class="header__burger burger button button--primary button--icon">
+        <input type="checkbox" class="header__burger-icon burger__icon">
+        <ul class="header__menu">
+          {% for item in header__menu %}
+            <li class="header__menu-item">
+              <a href="{{ item.href }}" class="header__menu-link">
+                {{ item.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </label>
+      <a href="/" class="header__logo">
+        <img src="/src/assets/images/logo.svg" alt="logo">
+      </a>
     </div>
+    <div class="header__actions-block">
+      <button
+        class="header__action-search button button--secondary button--icon"
+        type="button"
+      >
+        {{ icon("search-md", "header__action-search-icon") }}
+      </button>
+      <input type="search" class="header__search-input input" placeholder="Search for Digital Assets">
+      <button
+        class="header__action-shopping-bag button button--primary button--icon"
+        type="button"
+      >
+        {{ icon("shopping-bag", "header__action-shopping-bag-icon") }}
+      </button>
+    </div>
+  </div>
 </header>
 
-{# <header class="header" id="header">
+{#
+  <header class="header" id="header">
   <div class="header__wrapper wrapper">
 
 
-    <div class="header__logo-block">
-      <label id="burger" class="header__burger burger ">
-        <input type="checkbox" class="header__burger-icon burger__icon">
+  <div class="header__logo-block">
+  <label id="burger" class="header__burger burger ">
+  <input type="checkbox" class="header__burger-icon burger__icon">
 
-        <div class="header__mobile-nav">
+  <div class="header__mobile-nav">
 
-          <label class="header__mobile-search search">
-            <input class="search__input" type="search" placeholder="Search" minlength="5"/>
-          </label>
+  <label class="header__mobile-search search">
+  <input class="search__input" type="search" placeholder="Search" minlength="5"/>
+  </label>
 
-          <ul class="header__mobile-list">
+  <ul class="header__mobile-list">
 
-            {% for item in header_nav %}
-              <li class="header__element">
-                <a class="header__link-menu {{ "header__link--active" if activePage == item.title }}"
-                   href="{{ item.link }}">{{ item.title }}</a>
-              </li>
-            {% endfor %}
+  {% for item in header_nav %}
+  <li class="header__element">
+  <a class="header__link-menu {{ "header__link--active" if activePage == item.title }}"
+  href="{{ item.link }}">{{ item.title }}</a>
+  </li>
+  {% endfor %}
 
-          </ul>
-
-        </div>
-      </label>
-
-      <a class="header__link logo" href="/">
-        <img class="header__logo logo__img" src="img/logo.svg" alt="Logo"/>
-        <img src="img/logo-heading.svg" class="logo__heading" alt="Logo"></img>
-      </a>
-    </div>
-    <nav class="header__navigation" id="menu">
-      <ul class="header__list">
-
-        {% for item in header_nav %}
-          <li class="header__element">
-            <a class="header__link-menu {{ "header__link--active" if activePage == item.title }}"
-               href="{{ item.link }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-
-      </ul>
-    </nav>
-
-    <div class="header__actions">
-
-
-      <button type="button" class="header__button-wallet button button--primary">
-        <img src="img/wallet.svg" class="button__icon button__icon--left" alt="wallet"/>
-        {{ header_btn_primary }}
-      </button>
-
-    </div>
+  </ul>
 
   </div>
-</header> #}
+  </label>
+
+  <a class="header__link logo" href="/">
+  <img class="header__logo logo__img" src="img/logo.svg" alt="Logo"/>
+  <img src="img/logo-heading.svg" class="logo__heading" alt="Logo"></img>
+  </a>
+  </div>
+  <nav class="header__navigation" id="menu">
+  <ul class="header__list">
+
+  {% for item in header_nav %}
+  <li class="header__element">
+  <a class="header__link-menu {{ "header__link--active" if activePage == item.title }}"
+  href="{{ item.link }}">{{ item.title }}</a>
+  </li>
+  {% endfor %}
+
+  </ul>
+  </nav>
+
+  <div class="header__actions">
+
+
+  <button type="button" class="header__button-wallet button button--primary">
+  <img src="img/wallet.svg" class="button__icon button__icon--left" alt="wallet"/>
+  {{ header_btn_primary }}
+  </button>
+
+  </div>
+
+  </div>
+  </header>
+#}

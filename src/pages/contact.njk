@@ -1,16 +1,16 @@
 {% extends 'src/templates/layouts/base.njk' %}
 
 {% block styles %}
-    <link rel="stylesheet" href="/src/styles/pages/contact.scss"/>
+  <link rel="stylesheet" href="/src/styles/pages/contact.scss">
 {% endblock %}
 
 {% set activePage = 'Home' %}
 
 {% block content %}
-    <div class="contacts">
-        <div class="contacts__wrapper wrapper">
-            {% include 'src/templates/partials/contact/contact-info.njk' %}
-            {% include 'src/templates/partials/contact/contact-form.njk' %}
-        </div>
+  <div class="contacts">
+    <div class="contacts__wrapper wrapper">
+      {% include 'src/templates/partials/contact/contact-info.njk' %}
+      {% include 'src/templates/partials/contact/contact-form.njk' %}
     </div>
+  </div>
 {% endblock %}

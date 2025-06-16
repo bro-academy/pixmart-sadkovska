@@ -5,25 +5,21 @@
   align-items: center;
   gap: var(--spacer-1);
 
-  &__avatar{
+  &__avatar {
     flex: 0 0 60px;
     border-radius: 60px;
     overflow: hidden;
   }
 
-  &__data{
+  &__data {
     color: var(--color-category-heading);
   }
 
-  &__name{
+  &__name {
     @extend %h5;
   }
 
-  &__date{
+  &__date {
     @extend %body-p2;
   }
 }
-
-
-
-

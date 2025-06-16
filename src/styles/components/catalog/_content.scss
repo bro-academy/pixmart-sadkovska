@@ -4,31 +4,31 @@
 .catalog-content {
   margin-block-end: 120px;
 
-  @include bp.down-sm{
+  @include bp.down-sm {
     margin-block-end: var(--spacer-6);
   }
 
-  &__inner{
+  &__inner {
     display: flex;
     width: 100%;
     gap: var(--spacer-3);
 
-    @include bp.down-sm{
+    @include bp.down-sm {
       flex-direction: column;
     }
   }
 
-  &__aside-wrapper{
-    @include bp.md{
+  &__aside-wrapper {
+    @include bp.md {
       flex: 0 0 218px;
     }
 
-    @include bp.down-md{
+    @include bp.down-md {
       display: none;
     }
   }
 
-  &__body{
+  &__body {
     flex: 0 1 auto;
     width: 100%;
     display: flex;
@@ -36,64 +36,63 @@
     gap: var(--spacer-5);
   }
 
-  &__body-controls{
+  &__body-controls {
     display: flex;
     gap: var(--spacer-3);
 
-    @include bp.md{
+    @include bp.md {
       justify-content: space-between;
     }
 
-    @include bp.down-md{
+    @include bp.down-md {
       flex-direction: column;
     }
   }
 
-  &__body-control{
+  &__body-control {
     display: flex;
     height: auto;
     align-items: flex-start;
 
-    &--left{
+    &--left {
       display: flex;
       flex-direction: column;
       gap: var(--spacer-3);
     }
-
   }
 
-  &__order{
-    @include bp.down-md{
+  &__order {
+    @include bp.down-md {
       flex: 0 1 100%;
     }
   }
 
-  &__order-wrap{
+  &__order-wrap {
     display: flex;
     gap: var(--spacer-0);
     width: 100%;
   }
 
-  &__toggle-filters{
+  &__toggle-filters {
     display: none;
 
-    @include bp.down-md{
+    @include bp.down-md {
       display: flex;
     }
   }
 
-  &__select-view-info{
+  &__select-view-info {
     @extend %body-p2;
   }
 
-  &__select-view{
+  &__select-view {
     display: flex;
     align-items: center;
     gap: var(--spacer-3);
     height: auto;
   }
 
-  &__select-view-buttons{
+  &__select-view-buttons {
     display: flex;
     gap: var(--spacer-0);
   }

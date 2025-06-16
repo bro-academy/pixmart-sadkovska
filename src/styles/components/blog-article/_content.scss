@@ -4,24 +4,24 @@
 .blog-article-content {
   margin-block-end: 120px;
 
-  @include bp.down-sm{
+  @include bp.down-sm {
     margin-block-end: var(--spacer-6);
   }
 
-  &__inner{
+  &__inner {
     display: flex;
     gap: var(--spacer-4);
 
-    @include bp.down-sm{
+    @include bp.down-sm {
       flex-direction: column;
     }
   }
 
-  &__aside-wrapper{
+  &__aside-wrapper {
     flex: 0 0 260px;
   }
 
-  &__body{
+  &__body {
     flex: 0 1 auto;
   }
 }
