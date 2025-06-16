@@ -1,0 +1,23 @@
+<section class="products">
+  <div class="products__wrapper wrapper wrapper--mobile-full-width">
+    <div class="products__cards-block">
+      {% for item in product_section %}
+        <figure class="products__card">
+          <div class="products__card-bg">
+            <img
+              class="products__img"
+              src="{{ item.img }}"
+              alt="{{ item.alt }}"
+            />
+          </div>
+
+          <figcaption class="products__description">
+            <p class="products__title">
+              {{ item.title }}
+            </p>
+          </figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,64 @@
+{% extends 'src/templates/layouts/base.njk' %}
+
+{% import 'src/templates/partials/ui/elements.njk' as ui %}
+
+{% block styles %}
+<style>
+  body {
+    color: black;
+  }
+
+  section {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+
+    header {
+      margin-block: 10px;
+    }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+  <h1>{{ index.title }}</h1>
+
+  <ul style="font-size: 32px">
+    <li>
+      <a href="home.html">Home</a>
+    </li>
+    <li>
+      <a href="blog.html">Blog</a>
+    </li>
+    <li>
+      <a href="catalog.html">Catalog</a>
+    </li>
+    <li>
+      <a href="contacts.html">Contacts</a>
+    </li>
+    <li>
+      <a href="ui.html">UI</a>
+    </li>
+  </ul>
+
+  <section>
+    <header>
+      Buttons
+    </header>
+
+    <div>
+            {{ ui.button('HELLO') }}
+    </div>
+  </section>
+
+  <section>
+    <header>
+      Icons
+    </header>
+
+    <div>
+      {{ ui.icon('check', 'class') }}
+    </div>
+  </section>
+
+{% endblock %}

@@ -1,0 +1,124 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.pricing {
+  margin-block-end: 65px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  &__label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    @extend %h5;
+
+    margin-block: 0 16px;
+  }
+
+  &__title-block {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__price {
+    @extend %h2;
+
+    margin: 0;
+  }
+
+  &__month {
+    @extend %body-p2;
+
+    margin-block: 0 32px;
+    color: var(--color-bg-baseicone);
+    opacity: .5;
+  }
+
+  &__heading {
+    @extend %h2;
+
+    color: var(--color-category-heading);
+    margin-block: 0 48px;
+    text-align: center;
+
+    @include bp.md {
+      margin-block: 0 80px;
+    }
+  }
+
+  &__category {
+    @extend %body-p2;
+
+    color: var(--color-category-text);
+  }
+
+  &__cards-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+
+    @include bp.md {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__card-item {
+    background-color: var(--color-bg-base);
+    border-radius: 20px;
+    margin-bottom: 16px;
+    padding: 32px;
+    position: relative;
+    width: 100%;
+
+    @extend %surface-shadow;
+
+    @include bp.md {
+      &:nth-child(2) {
+        transform: translateY(-32px);
+      }
+    }
+
+    &--labeled {
+      border: 2px solid var(--color-marina-800);
+    }
+  }
+
+  &__offer-list {
+    padding: 0 ;
+    margin-block: 0 40px;
+
+    &::before {
+      content: '';
+      height: 1px;
+      background-color: var(--color-line-element);
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__offer-item {
+    margin-block: 0 16px;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      margin-block: 0;
+    }
+  }
+
+  &__offer-icon {
+    color: var(--color-marina-800);
+    margin-inline-end: 16px;
+  }
+}

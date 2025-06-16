@@ -1,0 +1,100 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.header {
+  background: var(--color-surface-white);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  @include bp.md {
+    position: static;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 16px;
+
+    @include bp.sm {
+      padding: 24px 40px;
+    }
+  }
+
+  &__menu-block {
+    display: flex;
+    align-items: center;
+
+    @include bp.md {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__menu {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    background: var(--color-bg-alternative);
+    top: 88px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    z-index: 1;
+
+    @include bp.md {
+      margin-inline-start: 32px;
+      background: transparent;
+      opacity: 1;
+      visibility: visible;
+      position: unset;
+      display: flex;
+    }
+  }
+
+  &__burger-icon {
+    &:checked ~ .header__menu {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__menu-link {
+    @extend %link-l3;
+
+    color: var(--color-primary);
+    padding: 18px 32px;
+    display: block;
+
+    @include bp.md {
+      display: unset;
+      padding: 6px 12px;
+    }
+  }
+
+  &__actions-block {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__action-search {
+    @include bp.md {
+      display: none;
+    }
+  }
+
+  &__search-input {
+    line-height: 20px;
+    padding: 8px 12px;
+    min-width: 240px;
+    display: none;
+
+    @include bp.md {
+      display: block;
+    }
+  }
+
+}

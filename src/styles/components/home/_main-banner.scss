@@ -1,0 +1,133 @@
+@use "/src/styles/global/mixin";
+@use "./../../global/breakpoints" as bp;
+
+.main-banner {
+  padding-block: 32px 64px;
+  background: linear-gradient(90deg, var(--color-surface-blue) 44%, #FFFFFF 100%);
+
+  &__wrapper {
+    flex-direction: column;
+
+    @include bp.md {
+      flex-direction: row-reverse;
+      gap: 116px
+    }
+  }
+
+  &__illustration {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 408 / 276;
+
+
+    @include bp.md {
+      width: 100%;
+      aspect-ratio: 624 / 544;
+    }
+  }
+
+  &__img {
+    display: inline-block;
+    position: absolute;
+
+    &--first {
+      width: 34%;
+      top: 8%;
+
+      @include bp.md {
+        width: 45%;
+      }
+    }
+
+    &--second {
+      width: 48%;
+      background: var(--color-white);
+      padding: 6px;
+      overflow: hidden;
+      border-radius: 10px;
+      top: 1%;
+      right: 12%;
+
+      @include bp.md {
+        width: 50%;
+        top: 5%;
+        right: 1%;
+      }
+    }
+
+    &--third {
+      width: 59%;
+      right: 12%;
+      bottom: 4%;
+
+      @include bp.md {
+        width: 85%;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    &--fourth,
+    &--fifth {
+      background: var(--color-surface-white);
+      padding: 8px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 25px rgb(29 57 95 / 0.08);
+      color: var(--color-category-text);
+
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      @include bp.md {
+        .icon {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    &--fourth {
+      top: 1%;
+      right: 16%;
+
+      @include bp.md {
+        top: 1%;
+        right: 13%;
+      }
+    }
+
+    &--fifth {
+      left: 4%;
+      bottom: 0;
+
+      @include bp.md {
+        left: 4%;
+        bottom: 8%;
+      }
+    }
+  }
+
+  &__title {
+    @extend %h1;
+  }
+
+  &__title-accent {
+    color: var(--color-marina-800);
+  }
+
+  &__subtitle {
+    @extend %s5;
+
+    color: var(--color-secondary2);
+  }
+
+  &__cta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+}

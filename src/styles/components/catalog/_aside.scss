@@ -1,0 +1,13 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.blog-article-aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer-4);
+
+  &__el:not(:last-child){
+    padding: 0 0 var(--spacer-4);
+    border-bottom: 2px solid var(--color-primary);
+  }
+}

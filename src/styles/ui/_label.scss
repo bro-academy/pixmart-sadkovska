@@ -1,0 +1,14 @@
+ @use "/src/styles/global/mixin";
+ @use "/src/styles/global/breakpoints" as bp;
+
+ .label {
+     @extend %h5;
+
+     background-color: var(--color-marina-800);
+     color: var(--color-primary-invert);
+     border-radius: 0 18px 0 20px;
+     padding: 7px 24px;
+     margin: 0;
+
+
+ }

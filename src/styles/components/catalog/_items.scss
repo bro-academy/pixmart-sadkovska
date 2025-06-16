@@ -1,0 +1,124 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.catalog-items {
+  margin-block-end: 120px;
+
+  @include bp.down-sm{
+    margin-block-end: var(--spacer-6);
+  }
+
+  &__inner{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item{
+    @include bp.md{
+      grid-column: span 1;
+    }
+
+    @include bp.down-sm{
+      grid-column: span 3;
+    }
+
+    &--sold{
+      opacity: .5;
+    }
+  }
+
+  &__item-inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-wrap{
+    display: flex;
+    position: relative;
+    aspect-ratio: 325 / 260;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__badge{
+    position: absolute;
+    left: var(--spacer-1);
+    top: var(--spacer-1);
+    height: var(--spacer-4);
+    padding: var(--spacer-0) var(--spacer-1);
+    border-radius: var(--spacer-4);
+    background: var(--color-marina-800);
+
+    @extend %body-p2;
+
+    &--sold{
+      background: var(--color-bg-base);
+    }
+
+    &--new{
+      background: var(--color-emerald-1000);
+      color: var(--color-primary-white);
+    }
+
+    &--popular{
+      background: var(--color-marina-800);
+      color: var(--color-primary-white);
+    }
+  }
+
+  &__data{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name{
+    @extend %h5;
+  }
+
+  &__categories{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__category{
+    @extend %body-p2;
+
+    color: var(--color-text-icons-elements-secondary);
+
+    &:not(:last-child){
+      &::after{
+        content: " · ";
+      }
+    }
+  }
+
+  &__price-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+
+  &__price{
+    @extend %h5;
+  }
+
+  &__buttons{
+    display: flex;
+    gap: var(--spacer-0);
+  }
+
+  &__footer{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacer-5);
+  }
+}

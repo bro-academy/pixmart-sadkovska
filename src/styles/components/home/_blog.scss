@@ -1,0 +1,72 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.blog {
+  margin-block-end: 64px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: stretch;
+  }
+
+  &__heading {
+    @extend %h2;
+
+    margin: 0;
+    color: var(--color-category-heading);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include bp.md {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      align-items: baseline;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__products {
+    margin-block-start: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+
+    @include bp.md {
+      flex-direction: row;
+    }
+  }
+
+
+  &__card {
+    margin: 0;
+  }
+
+  &__figure-heading {
+    margin-block-start: 24px;
+  }
+
+  &__title {
+    @extend %h3;
+
+    margin: 0;
+  }
+
+  &__date {
+    @extend %body-p2;
+
+    color: var(--color-secondary2);
+    text-transform: uppercase;
+    margin-block: 8px 0;
+  }
+
+}

@@ -1,0 +1,23 @@
+@use "./../components/blog-article/header";
+@use "./../components/blog-article/content";
+@use "./../components/blog-article/aside";
+@use "./../components/blog-article/author";
+@use "./../components/blog-article/categories";
+@use "./../components/blog-article/latest-articles";
+@use "./../components/blog-article/related";
+
+.blog-article {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 604px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, var(--color-surface-blue) 0%, var(--color-surface-white) 100%);
+  }
+}

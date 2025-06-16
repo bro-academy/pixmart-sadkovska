@@ -1,0 +1,33 @@
+@use "/src/styles/global/breakpoints" as bp;
+
+.contacts {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 604px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, var(--color-surface-blue) 0%, var(--color-surface-white) 100%);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 120px;
+
+    @include bp.md {
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 40px;
+
+      & > * {
+        flex: 1;
+      }
+    }
+  }
+}

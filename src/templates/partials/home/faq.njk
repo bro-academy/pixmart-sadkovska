@@ -1,0 +1,35 @@
+{% import 'src/templates/partials/ui/elements.njk' as ui %}
+
+<section class="faq">
+    <div class="faq__wrapper wrapper">
+        <div class="faq__answers-block">
+            <p class="faq__category">
+                F.A.Q
+            </p>
+            <h4 class="faq__heading">Answers to Your Questions</h4>
+            <button type="button" class="faq__button button button--secondary button--lg"
+            >
+                Ask Us A Question
+            </button>
+        </div>
+
+        <div class="faq__details-block">
+            {% for item in faq %}
+                <div class="faq__details">
+                    <details class="faq__detail-element details" name="faq">
+                        <summary class="details__heading">
+                            <p class="details__heading-text">{{ item.heading }}</p>
+
+                            <button class="details__button button button--secondary button--icon">
+                                {{ ui.icon('chevron-up', 'details__icon') }}
+                            </button>
+                        </summary>
+                        <p class="details__text">
+                            {{ item.text }}
+                        </p>
+                    </details>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

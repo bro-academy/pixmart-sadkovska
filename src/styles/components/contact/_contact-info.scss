@@ -1,0 +1,92 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.contact-info {
+  margin-block: 64px 24px;
+
+  &__label {
+    @extend %body-p2;
+
+    margin: 0;
+    color: var(--color-marina-800);
+  }
+
+  &__heading {
+    @extend %h1;
+
+    margin-block: 16px;
+  }
+
+  &__description {
+    @extend %body-p1;
+
+    color: var(--color-secondary2);
+    margin-block-end: 32px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    margin-block-end: 48px;
+    padding: 0;
+  }
+
+  &__item {
+    @extend %link-l1;
+
+    color: var(--color-secondary);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__item-icon {
+    color: var(--color-marina-800);
+  }
+
+  &__link {
+    @extend %link-l1;
+
+    color: var(--color-secondary);
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__map {
+    margin: 0;
+    position: relative;
+  }
+
+  &__map-overlay {
+    position: absolute;
+    padding: 12px 16px;
+    border-radius: 10px;
+    right: 16px;
+    bottom: 16px;
+    background-color: var(--color-bg-base);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__map-icon {
+    color: var(--color-marina-800);
+  }
+
+  &__office-name {
+    @extend %body-p2-medium;
+
+    margin: 0;
+  }
+
+  &__office-address {
+    @extend %body-p2;
+
+    font-style: normal;
+  }
+
+}

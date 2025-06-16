@@ -1,0 +1,29 @@
+@use "/src/styles/global/mixin";
+
+.blog-article-author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-1);
+
+  &__avatar{
+    flex: 0 0 60px;
+    border-radius: 60px;
+    overflow: hidden;
+  }
+
+  &__data{
+    color: var(--color-category-heading);
+  }
+
+  &__name{
+    @extend %h5;
+  }
+
+  &__date{
+    @extend %body-p2;
+  }
+}
+
+
+
+

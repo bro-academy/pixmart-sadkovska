@@ -1,0 +1,30 @@
+@use "/src/styles/global/breakpoints" as bp;
+
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  padding-inline: 16px;
+  display: flex;
+  justify-self: center;
+
+  @include bp.sm {
+    padding-inline: 40px;
+  }
+
+  @include bp.md {
+    padding-inline: 40px;
+  }
+
+  &--mobile-full-width {
+    padding-inline: 0;
+
+    @include bp.md {
+      padding-inline: 40px;
+    }
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+}

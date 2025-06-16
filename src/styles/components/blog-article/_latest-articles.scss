@@ -1,0 +1,37 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.blog-article-latest {
+  &__title{
+    @extend %h4;
+
+    margin: 0 0 var(--spacer-3);
+  }
+
+  &__items{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-3);
+  }
+
+  &__item:not(:last-child){
+    padding-bottom: var(--spacer-3);
+    border-bottom: 1px solid #22222226;
+  }
+
+  &__name{
+    @extend %h5;
+
+    color: var(--color-primary);
+    margin: 0 0 12px;
+  }
+
+  &__date{
+    @extend %body-p2;
+
+    color: var(--color-text-icons-elements-secondary);
+
+  }
+}
+
+

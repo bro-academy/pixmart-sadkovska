@@ -1,0 +1,100 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.catalog-content {
+  margin-block-end: 120px;
+
+  @include bp.down-sm{
+    margin-block-end: var(--spacer-6);
+  }
+
+  &__inner{
+    display: flex;
+    width: 100%;
+    gap: var(--spacer-3);
+
+    @include bp.down-sm{
+      flex-direction: column;
+    }
+  }
+
+  &__aside-wrapper{
+    @include bp.md{
+      flex: 0 0 218px;
+    }
+
+    @include bp.down-md{
+      display: none;
+    }
+  }
+
+  &__body{
+    flex: 0 1 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-5);
+  }
+
+  &__body-controls{
+    display: flex;
+    gap: var(--spacer-3);
+
+    @include bp.md{
+      justify-content: space-between;
+    }
+
+    @include bp.down-md{
+      flex-direction: column;
+    }
+  }
+
+  &__body-control{
+    display: flex;
+    height: auto;
+    align-items: flex-start;
+
+    &--left{
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacer-3);
+    }
+
+  }
+
+  &__order{
+    @include bp.down-md{
+      flex: 0 1 100%;
+    }
+  }
+
+  &__order-wrap{
+    display: flex;
+    gap: var(--spacer-0);
+    width: 100%;
+  }
+
+  &__toggle-filters{
+    display: none;
+
+    @include bp.down-md{
+      display: flex;
+    }
+  }
+
+  &__select-view-info{
+    @extend %body-p2;
+  }
+
+  &__select-view{
+    display: flex;
+    align-items: center;
+    gap: var(--spacer-3);
+    height: auto;
+  }
+
+  &__select-view-buttons{
+    display: flex;
+    gap: var(--spacer-0);
+  }
+}

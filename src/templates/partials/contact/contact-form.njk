@@ -1,0 +1,44 @@
+{% from 'src/templates/partials/ui/elements.njk' import icon %}
+
+<section class="contact-form">
+    <form class="contact-form__form" action="/">
+        <div class="contact-form__field form-field">
+            <label for="name" class="form-field__label">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Amelia Robert Johnson"
+                   class="form-field__element input input--lg">
+        </div>
+        <div class="contact-form__field form-field">
+            <label for="email" class="form-field__label">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="amelia.robertjohnson@pixmart.com"
+                   class="form-field__element input  input--lg">
+        </div>
+        <div class="contact-form__field form-field">
+            <label for="subject" class="form-field__label">Subject</label>
+            <select id="subject" name="subject" class="form-field__element select select--lg">
+                <option value="general">General Inquiry</option>
+                <option value="several">Several Inquiry</option>
+            </select>
+        </div>
+        <div class="contact-form__field form-field">
+            <label for="message" class="form-field__label">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message ..."
+                      class="form-field__element textarea textarea--lg"></textarea>
+        </div>
+        <div class="contact-form_terma">
+            <div class="contact-form__field form-field">
+                <label for="subscribe" class="form-field__label">
+                    <input id="subscribe" name="subscribe" type="checkbox" class="form-field__element checkbox">
+                    Subscribe me to Newsletter
+                </label>
+            </div>
+            <div class="contact-form__field form-field">
+                <label for="policy" class="form-field__label">
+                    <input id="policy" name="policy" type="checkbox" class="form-field__element checkbox">
+                    I have read the User & Privacy Policy
+                </label>
+            </div>
+        </div>
+
+        <button class="contact-form__button button button--primary button--lg" type="submit">Send Message</button>
+    </form>
+</section>

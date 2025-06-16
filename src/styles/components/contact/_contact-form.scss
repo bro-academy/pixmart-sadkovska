@@ -1,0 +1,21 @@
+@use "/src/styles/global/mixin";
+@use "/src/styles/global/breakpoints" as bp;
+
+.contact-form {
+  &__wrapper {
+    @include bp.md {
+      padding: 0;
+    }
+  }
+
+  &__form {
+    border-radius: 20px;
+    padding: 32px;
+
+    @extend %surface-shadow;
+  }
+
+  &__button {
+    margin-block-start: 12px ;
+  }
+}

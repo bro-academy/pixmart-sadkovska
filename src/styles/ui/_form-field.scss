@@ -1,0 +1,10 @@
+.form-field {
+  margin-block-end: 20px;
+
+  &__label {
+    margin-block-end: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
