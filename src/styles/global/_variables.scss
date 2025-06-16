@@ -1,6 +1,7 @@
 :root {
-  --font-family-primary: 'Plus Jakarta Sans', arial, verdana, tahoma, sans-serif;
-  --font-family-secondary: 'Libre Franklin', arial, verdana, tahoma, sans-serif;
+  --font-family-primary:
+    "Plus Jakarta Sans", arial, verdana, tahoma, sans-serif;
+  --font-family-secondary: "Libre Franklin", arial, verdana, tahoma, sans-serif;
 
   // Text-icon-elements
   --color-primary: #0d0d15ff;
@@ -16,7 +17,7 @@
   --color-secondary2-invert: #ffffff99;
   --color-basetone-invert: #d9d9f878;
   --color-disabled-invert: #ffffff5c;
-  --color-text-icons-elements-secondary: #2A3541D9;
+  --color-text-icons-elements-secondary: #2a3541d9;
 
   // BG
   --color-bg-base: #ffffffff;
@@ -62,9 +63,7 @@
   --color-surface-grey: #f7f7f8ff;
   --color-surface-blue: #f0f6fdff;
   --color-surface-white: #ffffffff;
-  --color-surface-shadow: #1D395F14;
-
-
+  --color-surface-shadow: #1d395f14;
 
   // StaticPalette/Marina
   --color-marina-1200: #000015ff;
@@ -73,7 +72,7 @@
   --color-marina-900: #001a51ff;
   --color-marina-800: #0265dcff;
   --color-marina-700: #0359adff;
-  --color-marina-600: #3892F3ff;
+  --color-marina-600: #3892f3ff;
   --color-marina-500: #5993d8ff;
   --color-marina-400: #71bbfaff;
   --color-marina-300: #8bd0ffff;

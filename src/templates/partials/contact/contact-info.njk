@@ -1,43 +1,44 @@
 {% from 'src/templates/partials/ui/elements.njk' import icon %}
 
 <section class="contact-info">
-    <p class="contact-info__label">CONTACT</p>
+  <p class="contact-info__label">CONTACT</p>
 
-    <h1 class="contact-info__heading">Get in Touch<br>
-        with Us</h1>
+  <h1 class="contact-info__heading">
+    Get in Touch<br>
+    with Us
+  </h1>
 
-    <p class="contact-info__description">
-        We are here to help you navigate your creative journey.
-        Reach out for any questions, support, or feedback.
-    </p>
+  <p class="contact-info__description">
+    We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.
+  </p>
 
-    <p class="contact-info__description">
-        <button class="button button--primary button--lg">Shop Now</button>
-    </p>
+  <p class="contact-info__description">
+    <button class="button button--primary button--lg">Shop Now</button>
+  </p>
 
-    <ul class="contact-info__list">
-        <li class="contact-info__item">
-            {{ icon("phone", "contact-info__item-icon") }}
-            <a href="tel:+15551234567" class="contact-info__link">+1 (555) 123-4567</a>
-        </li>
-        <li class="contact-info__item">
-            {{ icon("mail", "contact-info__item-icon") }}
-            <a href="mailto:support@pixmart.com" class="contact-info__link">support@pixmart.com</a>
-        </li>
-        <li class="contact-info__item">
-            {{ icon("clock", "contact-info__item-icon") }}
-            <p class="contact-info__text">Monday to Friday : 9 AM - 5 PM EST</p>
-        </li>
-    </ul>
+  <ul class="contact-info__list">
+    <li class="contact-info__item">
+      {{ icon("phone", "contact-info__item-icon") }}
+      <a href="tel:+15551234567" class="contact-info__link">+1 (555) 123-4567</a>
+    </li>
+    <li class="contact-info__item">
+      {{ icon("mail", "contact-info__item-icon") }}
+      <a href="mailto:support@pixmart.com" class="contact-info__link">support@pixmart.com</a>
+    </li>
+    <li class="contact-info__item">
+      {{ icon("clock", "contact-info__item-icon") }}
+      <p class="contact-info__text">Monday to Friday : 9 AM - 5 PM EST</p>
+    </li>
+  </ul>
 
-    <figure class="contact-info__map">
-        <img src="/src/assets/images/location.png" alt="Location">
-        <figcaption class="contact-info__map-overlay">
-            {{ icon("marker-pin", "contact-info__map-icon") }}
-            <div class="contact-info__map-text">
-                <p class="contact-info__office-name">PixMart HQ</p>
-                <address class="contact-info__office-address">123 Creative Ave, Design City, 45678</address>
-            </div>
-        </figcaption>
-    </figure>
+  <figure class="contact-info__map">
+    <img src="/src/assets/images/location.png" alt="Location">
+    <figcaption class="contact-info__map-overlay">
+      {{ icon("marker-pin", "contact-info__map-icon") }}
+      <div class="contact-info__map-text">
+        <p class="contact-info__office-name">PixMart HQ</p>
+        <address class="contact-info__office-address">123 Creative Ave, Design City, 45678</address>
+      </div>
+    </figcaption>
+  </figure>
 </section>

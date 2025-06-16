@@ -12,7 +12,11 @@
     right: 0;
     top: 0;
     z-index: -1;
-    background: linear-gradient(to bottom, var(--color-surface-blue) 0%, var(--color-surface-white) 100%);
+    background: linear-gradient(
+      to bottom,
+      var(--color-surface-blue) 0%,
+      var(--color-surface-white) 100%
+    );
   }
 
   &__wrapper {

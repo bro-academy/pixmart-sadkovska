@@ -10,14 +10,13 @@
   @extend %surface-shadow;
 
   &::-webkit-details-marker,
-  &::marker{
+  &::marker {
     display: none;
   }
 
   &::after {
-    content: '';
+    content: "";
     display: block;
-
   }
 
   &__heading {
@@ -43,7 +42,7 @@
   }
 
   &__icon {
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
   }
 
   &[open] {

@@ -10,7 +10,6 @@
     align-items: center;
   }
 
-
   &__label {
     position: absolute;
     top: 0;
@@ -40,7 +39,7 @@
 
     margin-block: 0 32px;
     color: var(--color-bg-baseicone);
-    opacity: .5;
+    opacity: 0.5;
   }
 
   &__heading {
@@ -95,11 +94,11 @@
   }
 
   &__offer-list {
-    padding: 0 ;
+    padding: 0;
     margin-block: 0 40px;
 
     &::before {
-      content: '';
+      content: "";
       height: 1px;
       background-color: var(--color-line-element);
       display: block;

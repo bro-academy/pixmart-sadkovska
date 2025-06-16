@@ -2,58 +2,57 @@
 @use "/src/styles/global/mixin";
 
 .products {
-    &__wrapper {
-        padding-block: 64px;
+  &__wrapper {
+    padding-block: 64px;
 
-        @include bp.md {
-            padding-block: 64px;
-            padding-inline: 0;
-        }
+    @include bp.md {
+      padding-block: 64px;
+      padding-inline: 0;
     }
-    
-    &__cards-block {
-        overflow-x: auto;
-        display: flex;
-        gap: 16px;
-        flex-direction: row;
-        width: 100%;
-        justify-content: stretch;
-        padding-inline: 16px;
+  }
+
+  &__cards-block {
+    overflow-x: auto;
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: stretch;
+    padding-inline: 16px;
+  }
+
+  &__card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include bp.md {
+      flex-grow: 1;
     }
+  }
 
-    &__card {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  &__card-bg {
+    width: 224px;
+    height: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-alternative2);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 37px;
 
-        @include bp.md {
-            flex-grow: 1;
-        }
+    @include bp.md {
+      width: auto;
     }
+  }
 
-    &__card-bg {
-        width: 224px;
-        height: 224px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--color-bg-alternative2);
-        border-radius: 20px;
-        overflow: hidden;
-        padding: 37px;
+  &__img {
+    width: 100%;
+  }
 
-        @include bp.md {
-            width: auto;
-        }
-
-    }
-
-    &__img {
-        width: 100%;
-    }
-
-    &__description {
-        text-align: center;
-    }
+  &__description {
+    text-align: center;
+  }
 }

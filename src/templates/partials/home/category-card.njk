@@ -1,20 +1,20 @@
 {% import 'src/templates/partials/ui/elements.njk' as ui %}
 
 <figure class="categories__card">
-    <div class="categories__card-bg">
-        {{ ui.icon(item.icon, 'categories__img') }}
+  <div class="categories__card-bg">
+    {{ ui.icon(item.icon, 'categories__img') }}
+  </div>
+
+  <figcaption class="categories__heading">
+    <h4 class="categories__title">{{ item.title }}</h4>
+    <div class="categories__subtitle dividers-dot">
+      <p class="categories__info">
+        {{ item.info }}
+      </p>
+
+      <p class="categories__info">
+        {{ item.info_part }}
+      </p>
     </div>
-
-    <figcaption class="categories__heading">
-        <h4 class="categories__title">{{ item.title }}</h4>
-        <div class="categories__subtitle dividers-dot">
-            <p class="categories__info">
-                {{ item.info }}
-            </p>
-
-            <p class="categories__info">
-                {{ item.info_part }}
-            </p>
-        </div>
-    </figcaption>
+  </figcaption>
 </figure>

@@ -1,94 +1,98 @@
 {% from 'src/templates/partials/ui/elements.njk' import icon %}
 
 <footer class="footer">
-    <div class="footer__wrapper wrapper">
-        <div class="footer__logo-wrapper">
-            <a href="/" class="footer__logo">
-                <img src="/src/assets/images/logo.svg" alt="logo">
-            </a>
+  <div class="footer__wrapper wrapper">
+    <div class="footer__logo-wrapper">
+      <a href="/" class="footer__logo">
+        <img src="/src/assets/images/logo.svg" alt="logo">
+      </a>
 
-            <p class="footer__text">
-                Your premium digital assets solution with high quality and comprehensive range of products and services.
-            </p>
-        </div>
+      <p class="footer__text">
+        Your premium digital assets solution with high quality and comprehensive range of products and services.
+      </p>
+    </div>
 
-        <ul class="footer__menu">
-            <li class="footer__menu-group">
-                <p class="footer__menu-group-title">Company</p>
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Homepage v1</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Homepage v2</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Homepage v3</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">About Us</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">About Us</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Blog Articles</a></li>
-                </ul>
-            </li>
-
-            <li class="footer__menu-group">
-                <p class="footer__menu-group-title">Products</p>
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Website</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Mobile App</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Social Media Feeds</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Presentation</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Product Mockups</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Illustrations</a></li>
-                </ul>
-            </li>
-
-            <li class="footer__menu-group">
-                <p class="footer__menu-group-title">Account</p>
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Your Cart</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Check Out</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Refund Policy</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Company Policy</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Send A Message</a></li>
-                    <li class="footer__menu-item"><a class="footer__link" href="#">Customer Support</a></li>
-                </ul>
-            </li>
+    <ul class="footer__menu">
+      <li class="footer__menu-group">
+        <p class="footer__menu-group-title">Company</p>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item"><a class="footer__link" href="#">Homepage v1</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Homepage v2</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Homepage v3</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">About Us</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">About Us</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Blog Articles</a></li>
         </ul>
-    </div>
-    <div class="footer__wrapper wrapper">
-        <ul class="footer__social-block">
-            <li class="footer__social">
-                <button class="button button--secondary button--lg button--icon">
-                    {{ icon("twitter", "header__menu-icon") }}
-                </button>
-                <button class="button button--secondary button--lg button--icon">
-                    {{ icon("facebook", "header__menu-icon") }}
-                </button>
-                <button class="button button--secondary button--lg button--icon">
-                    {{ icon("telegram", "header__menu-icon") }}
-                </button>
-            </li>
+      </li>
+
+      <li class="footer__menu-group">
+        <p class="footer__menu-group-title">Products</p>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item"><a class="footer__link" href="#">Website</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Mobile App</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Social Media Feeds</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Presentation</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Product Mockups</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Illustrations</a></li>
         </ul>
+      </li>
 
-        <div class="footer__subscribe">
-            <p class="footer__subscribe-text">Subscribe to <br> Design Newsletter</p>
-            <form class="footer__subscribe-form" action="/">
-                <input class="input input--lg" placeholder="Enter your email address ..." type="text">
-                <button class="button button--primary button--lg" type="submit">Subscribe</button>
-            </form>
-        </div>
-    </div>
+      <li class="footer__menu-group">
+        <p class="footer__menu-group-title">Account</p>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item"><a class="footer__link" href="#">Your Cart</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Check Out</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Refund Policy</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Company Policy</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Send A Message</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="#">Customer Support</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="footer__wrapper wrapper">
+    <ul class="footer__social-block">
+      <li class="footer__social">
+        <button class="button button--secondary button--lg button--icon">
+          {{ icon("twitter", "header__menu-icon") }}
+        </button>
+        <button class="button button--secondary button--lg button--icon">
+          {{ icon("facebook", "header__menu-icon") }}
+        </button>
+        <button class="button button--secondary button--lg button--icon">
+          {{ icon("telegram", "header__menu-icon") }}
+        </button>
+      </li>
+    </ul>
 
-    <div class="footer__legal">
-        <div class="footer__wrapper wrapper">
-            <ul class="footer__legal-list dividers-line">
-                <li class="footer__legal-item">
-                    <a href="/privacy.html" class="footer__legal-link">Privacy Policy</a>
-                </li>
-                <li class="footer__legal-item">
-                    <a href="/terms.html" class="footer__legal-link">Terms and Condition</a>
-                </li>
-                <li class="footer__legal-item">
-                    <a href="/sitemap.html" class="footer__legal-link">Site Map</a></li>
-            </ul>
-            <p class="footer__copyright">
-                <small class="footer__copyright-small">Copyright © 2024 Pixmart. All rights reserved.</small>
-            </p>
-        </div>
+    <div class="footer__subscribe">
+      <p class="footer__subscribe-text">
+        Subscribe to <br>
+        Design Newsletter
+      </p>
+      <form class="footer__subscribe-form" action="/">
+        <input class="input input--lg" placeholder="Enter your email address ..." type="text">
+        <button class="button button--primary button--lg" type="submit">Subscribe</button>
+      </form>
     </div>
+  </div>
+
+  <div class="footer__legal">
+    <div class="footer__wrapper wrapper">
+      <ul class="footer__legal-list dividers-line">
+        <li class="footer__legal-item">
+          <a href="/privacy.html" class="footer__legal-link">Privacy Policy</a>
+        </li>
+        <li class="footer__legal-item">
+          <a href="/terms.html" class="footer__legal-link">Terms and Condition</a>
+        </li>
+        <li class="footer__legal-item">
+          <a href="/sitemap.html" class="footer__legal-link">Site Map</a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        <small class="footer__copyright-small">Copyright © 2024 Pixmart. All rights reserved.</small>
+      </p>
+    </div>
+  </div>
 </footer>
